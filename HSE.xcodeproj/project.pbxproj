@@ -32,11 +32,11 @@
 		85DBA57F271D4B0C00229965 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85DBA57D271D4B0C00229965 /* Main.storyboard */; };
 		85DBA581271D4B0D00229965 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85DBA580271D4B0D00229965 /* Assets.xcassets */; };
 		85DBA584271D4B0D00229965 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85DBA582271D4B0D00229965 /* LaunchScreen.storyboard */; };
-		85DBA58F271D4DB600229965 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85DBA58E271D4DB500229965 /* GoogleService-Info.plist */; };
 		85DBA592271D4E9F00229965 /* SMSCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA591271D4E9F00229965 /* SMSCodeVC.swift */; };
 		85DBA594271D4EB700229965 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DBA593271D4EB700229965 /* AuthManager.swift */; };
 		85DC6BBF2742B3D5003E8DC4 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DC6BBE2742B3D5003E8DC4 /* SettingsVC.swift */; };
 		85EDAF452746AF3400931A82 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EDAF442746AF3400931A82 /* TableViewController.swift */; };
+		AEC51A49275E51D600644888 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEC51A48275E51D500644888 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,11 +64,11 @@
 		85DBA580271D4B0D00229965 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85DBA583271D4B0D00229965 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85DBA585271D4B0D00229965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85DBA58E271D4DB500229965 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		85DBA591271D4E9F00229965 /* SMSCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSCodeVC.swift; sourceTree = "<group>"; };
 		85DBA593271D4EB700229965 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		85DC6BBE2742B3D5003E8DC4 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		85EDAF442746AF3400931A82 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		AEC51A48275E51D500644888 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +190,7 @@
 				852DBADD272D21E700809CA8 /* Managers */,
 				85DBA577271D4B0C00229965 /* AppDelegate.swift */,
 				85DBA579271D4B0C00229965 /* SceneDelegate.swift */,
-				85DBA58E271D4DB500229965 /* GoogleService-Info.plist */,
+				AEC51A48275E51D500644888 /* GoogleService-Info.plist */,
 				85DBA57D271D4B0C00229965 /* Main.storyboard */,
 				85DBA580271D4B0D00229965 /* Assets.xcassets */,
 				85DBA582271D4B0D00229965 /* LaunchScreen.storyboard */,
@@ -283,8 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				85DBA584271D4B0D00229965 /* LaunchScreen.storyboard in Resources */,
+				AEC51A49275E51D600644888 /* GoogleService-Info.plist in Resources */,
 				85DBA581271D4B0D00229965 /* Assets.xcassets in Resources */,
-				85DBA58F271D4DB600229965 /* GoogleService-Info.plist in Resources */,
 				85DBA57F271D4B0C00229965 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

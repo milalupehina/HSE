@@ -5,6 +5,8 @@
 //  Created by Сергей Мирошниченко on 30.10.2021.
 //
 
+//MARK: перечисление нахуя перечислением делать один vc
+
 enum ToDoListAssembly {
     static func assembly() -> ToDoListVC {
         let router = ToDoListRouter()

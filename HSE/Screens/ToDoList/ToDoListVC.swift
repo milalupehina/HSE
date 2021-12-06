@@ -162,12 +162,12 @@ private extension ToDoListVC {
         view.addSubview(activityIndicator)
         activityIndicator.center = view.center
         tableView.backgroundColor = .systemBackground
-        NSLayoutConstraint.activate([
-            tableView.leftAnchor.constraint(equalTo: view.leftAnchor),
-            tableView.rightAnchor.constraint(equalTo: view.rightAnchor),
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
+//        NSLayoutConstraint.activate([
+//            tableView.leftAnchor.constraint(equalTo: view.leftAnchor),
+//            tableView.rightAnchor.constraint(equalTo: view.rightAnchor),
+//            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+//            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+//        ])
     }
     
     func setupFlyButton() {

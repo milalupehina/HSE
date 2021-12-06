@@ -13,6 +13,8 @@ protocol ToDoListDisplayLogic: AnyObject {
     func displayLoad(_ viewModel: ToDoListModels.Load.ViewModel)
 }
 
+
+// MARK: ToDoListBusinessLogic -> ToDoListInterpretator
 protocol ToDoListBusinessLogic: AnyObject {
     func fetchItems(_ request: ToDoListModels.FetchItems.Request)
 }

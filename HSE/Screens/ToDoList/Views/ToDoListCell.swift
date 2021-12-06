@@ -15,9 +15,10 @@ final class ToDoListCell: UITableViewCell {
         didSet {
             titleLabel.text = model?.title
             descLabel.text = model?.description
-            if let image = UIImage(systemName: model?.imageName ?? "") {
-                leftImageView.image = image
-            }
+//            if let image = UIImage(systemName: model?.imageName ?? "") {
+//                leftImageView.image = image
+//            }
+            //prriority circle
             switch model?.priority {
             case .low:
                 priorityView.backgroundColor = .green
@@ -31,6 +32,7 @@ final class ToDoListCell: UITableViewCell {
         }
     }
     
+    //title of task
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -38,6 +40,7 @@ final class ToDoListCell: UITableViewCell {
         return label
     }()
     
+    //desc of task
     private lazy var descLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -45,6 +48,7 @@ final class ToDoListCell: UITableViewCell {
         return label
     }()
     
+    //left pic
     private lazy var leftImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
@@ -53,6 +57,7 @@ final class ToDoListCell: UITableViewCell {
         return image
     }()
     
+    //priority circle
     private lazy var priorityView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -60,6 +65,7 @@ final class ToDoListCell: UITableViewCell {
         return view
     }()
     
+    // расположение элементов вертикальное
     private lazy var vStackView: UIStackView = {
         let stack = UIStackView(
             arrangedSubviews: [
@@ -73,11 +79,15 @@ final class ToDoListCell: UITableViewCell {
         return stack
     }()
     
+    // расположение элементов горизонтальное
     private lazy var hStackView: UIStackView = {
         let stack = UIStackView(
             arrangedSubviews: [
+                //left pic
                 leftImageView,
+                //вертикальное расположение
                 vStackView,
+                //priority circle
                 priorityView
             ]
         )
@@ -87,19 +97,23 @@ final class ToDoListCell: UITableViewCell {
         return stack
     }()
     
+    //внешний вид тасков - картинка, подпись, описание, приоритет
     private func setupUI() {
         addSubview(hStackView)
         hStackView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         hStackView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         hStackView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         hStackView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        
+
+        //left pic
         leftImageView.widthAnchor.constraint(equalTo: heightAnchor).isActive = true
+        //priority
         priorityView.widthAnchor.constraint(equalTo: heightAnchor).isActive = true
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        //сразу внешку подставляет после оверайд
         setupUI()
     }
     
